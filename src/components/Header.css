@@ -1,0 +1,41 @@
+.header-nav {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.nav-item {
+  min-width: 120px;
+  background-color: #FFD600; /* Yellow from The Open Championship */
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+}
+
+@media (max-width: 600px) {          /* Mobile styles. need to refine */
+  .header-nav {
+    justify-content: space-between;
+  }
+  .nav-item {
+    flex: 1;
+    min-width: 0;
+    font-size: 14px;
+  }
+}
+
+.header-frame {               /* White frame around the nav buttons */
+    width: 100%;
+    border: 3px solid #FFFFFF;
+    border-radius: 12px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.nav-icon {                /* Makes sure icons use the Material Symbols font instead of Libre Baskerville */
+    font-family: 'Material Symbols Outlined' !important;
+}
