@@ -1,0 +1,17 @@
+.hero-banner {
+  background-color: #FFD600; /* Yellow from The Open Championship */
+  color: #060645; /* Dark blue from The Open Championship */
+  padding: 2px 0px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0px auto;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.hero-banner h1 {
+    margin: 0;
+    padding: 15px 0;
+}

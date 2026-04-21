@@ -8,12 +8,3 @@
   gap: 30px;
 }
 
-.hero-banner {
-  background-color: #FFD600; /* Yellow from The Open Championship */
-  color: #060645; /* Dark blue from The Open Championship */
-  padding: 20px;
-  border-radius: 12px;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-}

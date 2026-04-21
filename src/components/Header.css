@@ -17,6 +17,19 @@
   font-family: 'Libre Baskerville', serif;
 }
 
+.nav-item-active {          /* Active state for nav buttons - added thick white border and underline */
+    border: 3px solid #FFFFFF;
+    text-decoration: underline;
+    min-width: 120px;
+    background-color: #FFD600;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+}
+
 @media (max-width: 600px) {          /* Mobile styles. need to refine */
   .header-nav {
     justify-content: space-between;
@@ -34,8 +47,11 @@
     border-radius: 12px;
     padding: 10px;
     box-sizing: border-box;
+    margin-bottom: 0px;
+    outline: 1px solid red;
 }
 
-.nav-icon {                /* Makes sure icons use the Material Symbols font instead of Libre Baskerville */
+.nav-icon {                /* Makes sure icons use the Material Symbols Outlined font instead of Libre Baskerville */
     font-family: 'Material Symbols Outlined' !important;
 }
+
