@@ -6,9 +6,10 @@
 }
 
 .nav-item {
+  min-height: 50px;
   min-width: 120px;
   background-color: #FFD600; /* Yellow from The Open Championship */
-  border: 2px solid black;
+  border: 2px solid #ffffff;
   border-radius: 8px;
   padding: 12px 24px;
   font-weight: bold;
