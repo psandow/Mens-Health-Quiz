@@ -13,7 +13,17 @@ const HomeView = ({ setCurrentView }) =>
     <SearchBar/> 
     <p className="welcome-box">
       <p>Welcome to our Men’s Health resources and quizzes. These materials could be helpful for anyone with or interested in male-specific health concerns, including cis men, trans men, and non-binary people. </p>
-      <p>Test your knowledge with the quick quizzes below or check out our how-to guide.</p>
+      <p>Test your knowledge with the quick quizzes below or check out our {" "}
+        <a
+          href="#quizzes"
+          onClick={(e) => {
+            e.preventDefault();
+            setCurrentView('quizzes');
+          }}
+        >
+          how-to guide
+          </a>
+          .</p>
     </p>
     <CategoryGrid onCategoryClick={() => setCurrentView('in_Quiz')} />
   </div>;
@@ -59,8 +69,8 @@ function App() {
       <Header currentView={currentView} setCurrentView={setCurrentView} />
       <Hero currentView={currentView} />
     <main>
-      {currentView === 'home' && <HomeView />}
-      {currentView === 'quizzes' && <QuizzesView />}
+      {currentView === 'home' && <HomeView setCurrentView={setCurrentView}/>}
+      {currentView === 'quizzes' && <QuizzesView setCurrentView={setCurrentView}/>}
       {currentView === 'resources' && <ResourcesView />}
       {currentView === 'search_results' && <SearchResultsView query={searchQuery} />}
       {currentView === 'in_Quiz' && <QuizEngine />}
