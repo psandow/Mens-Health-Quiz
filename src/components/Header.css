@@ -48,7 +48,6 @@
     padding: 10px;
     box-sizing: border-box;
     margin-bottom: 0px;
-    outline: 1px solid red;
 }
 
 .nav-icon {                /* Makes sure icons use the Material Symbols Outlined font instead of Libre Baskerville */
