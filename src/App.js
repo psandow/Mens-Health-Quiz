@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Hero from './components/Hero';
 import SearchBar from './components/SearchBar';
 import CategoryGrid from './components/CategoryGrid';
+import QuizEngine from './components/QuizEngine';
 
 /* Top level states are HomeView, QuizzesView, ResourcesView, SearchReultsView, QuizEngine, and SummaryView. The props setCurrentView passed down from the App allows child components to change the top level state */
 
@@ -53,7 +54,6 @@ const SearchResultsView = () =>
   </div>;
 
 
-const QuizEngine = () => <div style={{padding: '20px', color: 'white'}}><h2>Quiz in Progress</h2><p>Figma Image 3, 4, 5 logic goes here.</p></div>;
 const SummaryView = () => <div style={{padding: '20px', color: 'white'}}><h2>Quiz Results</h2><p>Score summary goes here.</p></div>;
 
 
