@@ -1,13 +1,14 @@
 import React from 'react';
 import './Hero.css';
 
+/* Hero banner wording changes depending on the current view */
 const Hero = ({ currentView }) => {
   const titles = {
     home: "Men's Health Quiz",
     quizzes: "Men's Health Quizzes",
     resources: "Men's Health Resources",
-    search_results: "Search Results",
-    in_Quiz: "Men's Health: NAME OF QUIZ HERE",
+    searchResults: "Search Results",
+    inQuiz: "Men's Health: NAME OF QUIZ HERE",
     summary: "NAME OF QUIZ HERE Summary"
   };
 
