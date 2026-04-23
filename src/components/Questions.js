@@ -108,55 +108,55 @@ export const questions = [
     correctAnswer: 3,
     educationText: `Systemic Link: Chronic inflammation from gum disease (periodontitis) can allow bacteria to enter the bloodstream, which is linked to heart disease and can make blood sugar harder to control for men with diabetes.
 Cancer Screening: Men are statistically more likely to develop oral and throat cancers; a dentist is often the first person to spot these during a routine exam.
-The "Calculus" Factor: Once plaque hardens into tartar (calculus), it acts like a "coral reef" for bacteria that regular brushing cannot remove, requiring professional tools to prevent bone loss in the jaw.',
-    resourceLink: '/resources/lifestyle`,
+The "Calculus" Factor: Once plaque hardens into tartar (calculus), it acts like a "coral reef" for bacteria that regular brushing cannot remove, requiring professional tools to prevent bone loss in the jaw.`,
+    resourceLink: '/resources/general',
   },
-  /*{
+  {
     id: 12,
-    category:
-    questionText:
-    type:
-    answers:
-    correctAnswer:
-    educationText:
-    resourceLink:
+    category: 'general',
+    questionText: 'Which of the following non-eye-related health conditions can often be detected early during a comprehensive eye examination?',
+    type: 'multi',
+    answers: ['A) High blood pressure (hypertension)', 'B) Diabetes', 'C) High Cholesterol', 'D) All of the above'],
+    correctAnswer: 3,
+    educationText: 'The eye is the only place in the body where a doctor can see blood vessels and nerves directly without surgery. By looking at the back of your eye (the retina), opticians can spot early signs of heart disease, diabetes, and even certain neurological conditions before you feel any symptoms elsewhere in your body.',
+    resourceLink: '/resources/general',
   },
   {
     id: 13,
-    category:
-    questionText:
-    type:
-    answers:
-    correctAnswer:
-    educationText:
-    resourceLink:
+    category: 'general',
+    questionText: 'According to ENT (Ear, Nose, and Throat) specialists, what is the safest way to clean the inside of your ear canal at home?',
+    type: 'multi',
+    answers: ['A) Using a cotton bud', 'B) Using a twisted corner of a towel', 'C) Using a specialised "ear vacuum" from the internet', 'D) Nothing - you should never put anything smaller than your elbow inside your ear'],
+    correctAnswer: 3,
+    educationText: 'This classic medical saying highlights that the ear is self-cleaning. Using cotton buds often pushes wax deeper against the eardrum, leading to impaction or even a perforated eardrum. If wax is a recurring issue, the NHS recommends olive oil drops to soften it naturally.',
+    resourceLink: '/resources/general',
   },
   {
     id: 14,
-    category:
-    questionText:
-    type:
-    answers:
-    correctAnswer:
-    educationText:
-    resourceLink:
+    category: 'general',
+    questionText: 'Which is the most important time of day to brush your teeth to prevent long-term damage?',
+    type: 'multi',
+    answers: ['A) First thing in the morning', 'B) Immediately after lunch', 'C) Last thing before bed', 'D) Right after drinking coffee'],
+    correctAnswer: 2,
+    educationText: `While we sleep, our mouths produce less saliva, which is the body's natural protection against decay. Brushing before bed removes the day’s buildup of plaque and food debris, ensuring bacteria don't have "fuel" to produce acids that damage enamel and irritate gums overnight. In the UK, men are significantly more likely than women to skip this crucial session.`,
+    resourceLink: '/resources/general',
   },
   {
     id: 15,
-    category:
-    questionText:
-    type:
-    answers:
-    correctAnswer:
-    educationText:
-    resourceLink:
+    category: 'mh',
+    questionText: 'In men, depression often manifests differently than in women. Which of the following is a common "masked" sign of depression in men? ',
+    type: 'multi',
+    answers: ['A) Increased irritability and anger', 'B) Risk-taking behaviour (e.g. reckless driving)', 'C) Escapist behaviour (e.g. overworking or excessive gaming)', 'D) All of the above'],
+    correctAnswer: 3,
+    educationText: `Because of social conditioning, men are often less likely to report feeling "sad." Instead, depression may show up as low frustration tolerance or "acting out." According to the NHS, men may also experience physical symptoms like headaches or digestive issues that don't respond to treatment.`,
+    resourceLink: '/resources/mh',
   },
-  {
+  /*{
     id: 16,
     category:
     questionText:
     type:
-    answers:
+    answers: ['A) ', 'B) ', 'C) ', 'D) '],
     correctAnswer:
     educationText:
     resourceLink:
@@ -166,7 +166,7 @@ The "Calculus" Factor: Once plaque hardens into tartar (calculus), it acts like 
     category:
     questionText:
     type:
-    answers:
+    answers: ['A) ', 'B) ', 'C) ', 'D) '],
     correctAnswer:
     educationText:
     resourceLink:
@@ -176,7 +176,7 @@ The "Calculus" Factor: Once plaque hardens into tartar (calculus), it acts like 
     category:
     questionText:
     type:
-    answers:
+    answers: ['A) ', 'B) ', 'C) ', 'D) '],
     correctAnswer:
     educationText:
     resourceLink:
@@ -186,7 +186,7 @@ The "Calculus" Factor: Once plaque hardens into tartar (calculus), it acts like 
     category:
     questionText:
     type:
-    answers:
+    answers: ['A) ', 'B) ', 'C) ', 'D) '],
     correctAnswer:
     educationText:
     resourceLink:
@@ -196,7 +196,7 @@ The "Calculus" Factor: Once plaque hardens into tartar (calculus), it acts like 
     category:
     questionText:
     type:
-    answers:
+    answers: ['A) ', 'B) ', 'C) ', 'D) '],
     correctAnswer:
     educationText:
     resourceLink:
@@ -206,7 +206,7 @@ The "Calculus" Factor: Once plaque hardens into tartar (calculus), it acts like 
     category:
     questionText:
     type:
-    answers:
+    answers: ['A) ', 'B) ', 'C) ', 'D) '],
     correctAnswer:
     educationText:
     resourceLink:
@@ -216,7 +216,7 @@ The "Calculus" Factor: Once plaque hardens into tartar (calculus), it acts like 
     category:
     questionText:
     type:
-    answers:
+    answers: ['A) ', 'B) ', 'C) ', 'D) '],
     correctAnswer:
     educationText:
     resourceLink:
@@ -226,7 +226,7 @@ The "Calculus" Factor: Once plaque hardens into tartar (calculus), it acts like 
     category:
     questionText:
     type:
-    answers:
+    answers: ['A) ', 'B) ', 'C) ', 'D) '],
     correctAnswer:
     educationText:
     resourceLink:
@@ -236,7 +236,7 @@ The "Calculus" Factor: Once plaque hardens into tartar (calculus), it acts like 
     category:
     questionText:
     type:
-    answers:
+    answers: ['A) ', 'B) ', 'C) ', 'D) '],
     correctAnswer:
     educationText:
     resourceLink:
@@ -246,7 +246,7 @@ The "Calculus" Factor: Once plaque hardens into tartar (calculus), it acts like 
     category:
     questionText:
     type:
-    answers:
+    answers: ['A) ', 'B) ', 'C) ', 'D) '],
     correctAnswer:
     educationText:
     resourceLink:
@@ -256,7 +256,7 @@ The "Calculus" Factor: Once plaque hardens into tartar (calculus), it acts like 
     category:
     questionText:
     type:
-    answers:
+    answers: ['A) ', 'B) ', 'C) ', 'D) '],
     correctAnswer:
     educationText:
     resourceLink:
@@ -266,7 +266,7 @@ The "Calculus" Factor: Once plaque hardens into tartar (calculus), it acts like 
     category:
     questionText:
     type:
-    answers:
+    answers: ['A) ', 'B) ', 'C) ', 'D) '],
     correctAnswer:
     educationText:
     resourceLink:
@@ -276,7 +276,7 @@ The "Calculus" Factor: Once plaque hardens into tartar (calculus), it acts like 
     category:
     questionText:
     type:
-    answers:
+    answers: ['A) ', 'B) ', 'C) ', 'D) '],
     correctAnswer:
     educationText:
     resourceLink:
@@ -286,7 +286,7 @@ The "Calculus" Factor: Once plaque hardens into tartar (calculus), it acts like 
     category:
     questionText:
     type:
-    answers:
+    answers: ['A) ', 'B) ', 'C) ', 'D) '],
     correctAnswer:
     educationText:
     resourceLink:
@@ -296,7 +296,7 @@ The "Calculus" Factor: Once plaque hardens into tartar (calculus), it acts like 
     category:
     questionText:
     type:
-    answers:
+    answers: ['A) ', 'B) ', 'C) ', 'D) '],
     correctAnswer:
     educationText:
     resourceLink:
@@ -306,7 +306,7 @@ The "Calculus" Factor: Once plaque hardens into tartar (calculus), it acts like 
     category:
     questionText:
     type:
-    answers:
+    answers: ['A) ', 'B) ', 'C) ', 'D) '],
     correctAnswer:
     educationText:
     resourceLink:
@@ -316,9 +316,10 @@ The "Calculus" Factor: Once plaque hardens into tartar (calculus), it acts like 
     category:
     questionText:
     type:
-    answers:
+    answers: ['A) ', 'B) ', 'C) ', 'D) '],
     correctAnswer:
     educationText:
     resourceLink:
-  },*/
-]
+  },
+*/
+  ]

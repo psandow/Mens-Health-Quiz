@@ -9,7 +9,7 @@ import QuizEngine from './components/QuizEngine';
 
 /* Top level states are HomeView, QuizzesView, ResourcesView, SearchReultsView, QuizEngine, and SummaryView. The props setCurrentView passed down from the App allows child components to change the top level state */
 
-const HomeView = ({ setCurrentView }) => 
+const HomeView = ({ setCurrentView, setSelectedCategory }) => 
   <div>
     <SearchBar/> 
     <p className="welcome-box">
@@ -26,10 +26,13 @@ const HomeView = ({ setCurrentView }) =>
           </a>
           .</p>
     </p>
-    <CategoryGrid onCategoryClick={() => setCurrentView('inQuiz')} />
+    <CategoryGrid onCategoryClick={(id) => {
+      setSelectedCategory(id); 
+      setCurrentView('inQuiz');
+      }} />
   </div>;
 
-const QuizzesView = ({ setCurrentView }) =>
+const QuizzesView = ({ setCurrentView, setSelectedCategory }) =>
   <div>
     <p className="welcome-box">
       <p>Welcome to our Men’s Health quizzes. There are five categories to chose from, or you can select the Random Quiz for 10 random questions from all the categories.</p>
@@ -63,7 +66,9 @@ const SummaryView = () => <div style={{padding: '20px', color: 'white'}}><h2>Qui
 function App() {
   const [currentView, setCurrentView] = useState('home');  /* currentView state tracks the page being viewed; setCurrentView updates the state or "view" */
   const [searchQuery, setSearchQuery] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState(null);
 
+console.log("Current View is:", currentView);
 
   /* below state and the state setter is passed to Header so the formating can change and to enable navigation. */
   /* in Main if current is 'home' HomeView is drawn on the webpage. setCurrentView is passed down to HomeView so that it can change the parent state*/
@@ -72,11 +77,11 @@ function App() {
       <Header currentView={currentView} setCurrentView={setCurrentView} />      
       <Hero currentView={currentView} />
     <main>
-      {currentView === 'home' && <HomeView setCurrentView={setCurrentView}/>}
+      {currentView === 'home' && <HomeView setCurrentView={setCurrentView} setSelectedCategory={setSelectedCategory}/>}
       {currentView === 'quizzes' && <QuizzesView setCurrentView={setCurrentView}/>}
       {currentView === 'resources' && <ResourcesView />}
       {currentView === 'searchResults' && <SearchResultsView query={searchQuery} />}
-      {currentView === 'inQuiz' && <QuizEngine />}
+      {currentView === 'inQuiz' && <QuizEngine category={selectedCategory} setCurrentView={setCurrentView} />}
       {currentView === 'summary' && <SummaryView />}
     </main>
     </div>

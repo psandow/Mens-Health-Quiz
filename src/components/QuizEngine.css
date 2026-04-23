@@ -1,0 +1,129 @@
+.question-banner {
+  background-color: #FFD600; /* Yellow from The Open Championship */
+  color: #060645; /* Dark blue from The Open Championship */
+  padding: 2px 0px;
+  padding-top: 25px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0px auto;
+  width: 100%;
+  margin-top: 0px;
+  border: 2px solid white;
+  min-height: 45px;
+}
+
+.question-box {
+  background-color: #FFD600; /* Yellow from The Open Championship */
+  color: #060645; /* Dark blue from The Open Championship */
+  padding: 2px 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 12px;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0px auto;
+  width: 100%;
+  margin-top: 15px;
+  border: 2px solid white;
+  min-height: 45px;
+  box-sizing: border-box;
+  margin-bottom: 0;
+
+}
+
+
+.quiz-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 2rem auto;
+  padding: 15px;
+  background-color: #FFD600;
+  color: #000000;
+  border-radius: 12px;
+  box-sizing: border-box;
+  border: 2px solid white;
+  margin-top: 15px;
+  margin-bottom: 0;
+  
+}
+
+
+.answers-boxes {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 5px;
+  margin: 1px 0;
+  
+}
+
+.answers-boxes button {
+  padding: 15px;
+  font-size: 1rem;
+  border: 2px solid #000000;
+  border-radius: 12px;
+  background-color: #FFD600;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.answers-boxes button.selected {
+  border-color: #060645;
+  border: 4px solid #060645;
+}
+
+.submit-button {
+  background-color: #FFD600; /* Yellow from The Open Championship */
+  color: #060645; /* Dark blue from The Open Championship */
+  padding: 2px 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0px auto;
+  width: 100%;
+  margin-top: 15px;
+  border: 2px solid white;
+  min-height: 45px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button:disabled {
+  color: #808080;
+  cursor: not-allowed;
+}
+
+.education-box {
+  background-color: #FFD600; /* Yellow from The Open Championship */
+  color: #060645; /* Dark blue from The Open Championship */
+  padding: 2px 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0px auto;
+  width: 100%;
+  margin-top: 15px;
+  border: 2px solid white;
+  min-height: 45px;
+  font-family: inherit;
+  box-sizing: border-box;
+}
