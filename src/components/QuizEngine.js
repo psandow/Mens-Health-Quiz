@@ -75,17 +75,33 @@ const QuizEngine = ({ category, setCurrentView }) => {
     <p className="question-box" >{currentQuestion.questionText}</p>
     <div className="quiz-container">
       <div className="answers-boxes">
-        {currentQuestion.answers.map((answer, index) => (
-          <button 
-            key={index}
-            onClick={() => handleAnswerClick(index)}
-            className={selectedAnswer === index ? 'selected' : ''}
-          >
-      
-            {answer}
-          </button>
-        ))}
-      </div>
+        {currentQuestion.answers.map((answer, index) => {
+   
+        let borderColor = "";
+
+        if (showEducation) {
+          if (index === currentQuestion.correctAnswer) {
+            borderColor = "correct-result";
+          } else if (selectedAnswer === index) {
+            borderColor = "wrong-result";
+          }
+        } 
+        else if (selectedAnswer === index) {
+        borderColor = "selected";
+        }
+
+    return (
+      <button 
+        key={index}
+        onClick={() => handleAnswerClick(index)}
+        className={borderColor}
+      >
+        {answer}
+      </button>
+    );
+  })}
+</div>
+
     </div>
 
     <div>
