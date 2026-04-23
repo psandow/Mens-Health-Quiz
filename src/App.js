@@ -68,7 +68,7 @@ function App() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState(null);
 
-console.log("Current View is:", currentView);
+/*console.log("Current View is:", currentView); */
 
   /* below state and the state setter is passed to Header so the formating can change and to enable navigation. */
   /* in Main if current is 'home' HomeView is drawn on the webpage. setCurrentView is passed down to HomeView so that it can change the parent state*/
