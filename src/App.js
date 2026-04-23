@@ -75,7 +75,7 @@ function App() {
   return (
     <div className="app-container">     
       <Header currentView={currentView} setCurrentView={setCurrentView} />      
-      <Hero currentView={currentView} />
+      <Hero currentView={currentView} selectedCategory={selectedCategory} />
     <main>
       {currentView === 'home' && <HomeView setCurrentView={setCurrentView} setSelectedCategory={setSelectedCategory}/>}
       {currentView === 'quizzes' && <QuizzesView setCurrentView={setCurrentView}/>}

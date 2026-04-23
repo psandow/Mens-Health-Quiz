@@ -2,7 +2,8 @@ import React from 'react';
 import './Hero.css';
 
 /* Hero banner wording changes depending on the current view */
-const Hero = ({ currentView }) => {
+const Hero = ({ currentView, selectedCategory }) => {
+
   const titles = {
     home: "Men's Health Quiz",
     quizzes: "Men's Health Quizzes",
@@ -12,9 +13,31 @@ const Hero = ({ currentView }) => {
     summary: "NAME OF QUIZ HERE Summary"
   };
 
+  const quizTitles = {
+    random: `Men's Health - Random Quiz`,
+    mh: `Men's Health - Mental Health Quiz`,
+    cancer: `Men's Health - Cancer Quiz`,
+    cardiovascular: `Men's Health - Cardiovascular Quiz`,
+    lifestyle: `Men's Health - Lifestyle & Sexual Health Quiz`,
+    general: `Men's Health - General Maintenance Quiz`
+  };
+
+  let title = quizTitles[currentView];
+
+  if (currentView === 'inQuiz') {
+    const quizTitle = quizTitles[selectedCategory];
+    title = `${quizTitle}`;
+  }
+
+  if (currentView === 'summary') {
+    const quizTitle = quizTitles[selectedCategory];
+    title = `Summary for ${quizTitle}`;
+
+  }
+
   return (
     <header className="hero-banner">
-      <h1>{titles[currentView] || "Men's Health Quiz"}</h1>
+      <h1>{title || "Men's Health Quiz"}</h1>
     </header>
   );
 };
