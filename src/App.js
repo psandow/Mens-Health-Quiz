@@ -6,6 +6,8 @@ import Hero from './components/Hero';
 import SearchBar from './components/SearchBar';
 import CategoryGrid from './components/CategoryGrid';
 import QuizEngine from './components/QuizEngine';
+import { questions } from './components/Questions';
+import './components/QuizEngine.css';
 
 /* Top level states are HomeView, QuizzesView, ResourcesView, SearchReultsView, QuizEngine, and SummaryView. The props setCurrentView passed down from the App allows child components to change the top level state */
 
@@ -56,8 +58,73 @@ const SearchResultsView = () =>
     <p>Search results paragraph</p>
   </div>;
 
+const SummaryView = ({ score, userAnswers, totalQuestions, setCurrentView }) => {
+  
+  /* .push method is used to add question numbers, question asked, and answers buttons with correct/incorrect highlighting to the empty array*/
+  const resultsList = [];
 
-const SummaryView = () => <div style={{padding: '20px', color: 'white'}}><h2>Quiz Results</h2><p>Score summary goes here.</p></div>;
+  /* nested loop goes through the questions list and finds the questions that were asked from the questionId held in userAnswers */
+  for (let i = 0; i < userAnswers.length; i++) {
+    const record = userAnswers[i];
+    
+    let questionAsked = null;
+    for (let j = 0; j < questions.length; j++) {
+      if (questions[j].id === record.questionId) {
+        questionAsked = questions[j];
+        break;
+      }
+    }
+
+    /* second nested loop makes the answers for the question found, and applies the green/red className */
+    const answerButtons = [];
+    for (let k = 0; k < questionAsked.answers.length; k++) {
+      const answerText = questionAsked.answers[k];
+      let statusColor = "";
+
+      if (k === questionAsked.correctAnswer) {
+        statusColor = "correct-result";
+      } else if (k === record.userSelection && !record.isCorrect) {
+        statusColor = "wrong-result";
+      }
+
+      answerButtons.push(
+        <button key={k} className={statusColor} >
+          {answerText}
+        </button>
+      );
+    }
+
+    /* everything combined */
+    resultsList.push(
+      <div key={record.questionId} className="result-item">
+        <h3 className="question-banner">Question {i + 1}</h3>
+        <p className="question-box">{questionAsked.questionText}</p>
+        
+        <div className="quiz-container">
+          <div className="answers-boxes">
+            {answerButtons}
+          </div>
+        </div>
+
+        <div className="education-box">
+          <p>{questionAsked.educationText}</p>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div>
+      <div>
+        <p className="score-banner">Your Score: {score} / {totalQuestions}</p>
+      </div>
+
+      <div className="results-list">
+        {resultsList}
+      </div>
+    </div>
+  );
+};
 
 
 
@@ -67,6 +134,8 @@ function App() {
   const [currentView, setCurrentView] = useState('home');  /* currentView state tracks the page being viewed; setCurrentView updates the state or "view" */
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState(null);
+  const [score, setScore] = useState(0);
+  const [userAnswers, setUserAnswers] = useState([]);
 
 /*console.log("Current View is:", currentView); */
 
@@ -81,8 +150,8 @@ function App() {
       {currentView === 'quizzes' && <QuizzesView setCurrentView={setCurrentView}/>}
       {currentView === 'resources' && <ResourcesView />}
       {currentView === 'searchResults' && <SearchResultsView query={searchQuery} />}
-      {currentView === 'inQuiz' && <QuizEngine category={selectedCategory} setCurrentView={setCurrentView} />}
-      {currentView === 'summary' && <SummaryView />}
+      {currentView === 'inQuiz' && <QuizEngine category={selectedCategory} setCurrentView={setCurrentView} score={score} setScore={setScore} setUserAnswers={setUserAnswers} userAnswers={userAnswers}/>}
+      {currentView === 'summary' && <SummaryView score={score} userAnswers={userAnswers} setCurrentView={setCurrentView} totalQuestions={userAnswers.length}/>}
     </main>
     </div>
   );

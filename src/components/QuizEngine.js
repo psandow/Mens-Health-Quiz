@@ -14,13 +14,12 @@ const shuffleArray = (array) => {
 };
 
 
-const QuizEngine = ({ category, setCurrentView }) => {
+const QuizEngine = ({ category, setCurrentView, score, setScore, userAnswers, setUserAnswers }) => {
   /* quisQuestion filters the questions based on the chosen category, or gives 10 random (using the shuffled array). */
 
-  /* State handlers needed: currentIndex to go through the 10 questions starting at question index 0; score to track the score, starting at 0; selectedAnswer to highlight it and enable greyed out submit button; showEducation to toggle seeing the next button and the educaiton info with the submit button;*/
+  /* State handlers needed: currentIndex to go through the 10 questions starting at question index 0; score to track the score (moved this to app.js as summary viewed needed it too), starting at 0; selectedAnswer to highlight it and enable greyed out submit button; showEducation to toggle seeing the next button and the educaiton info with the submit button;*/
   const [quizQuestions, setQuizQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [score, setScore] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null); /* can set submit button to be disabled if selected answer is null. Next question function will need to clear selected answer back to null by calling setSelectedAnswer(null). Submit function will compared selectedAnswer to the correctAnswer from questions.js file */
   const [showEducation, setShowEducation] = useState(false); /* call setShowEducation(true) when submit button is clicked*/
 
@@ -53,11 +52,23 @@ const QuizEngine = ({ category, setCurrentView }) => {
   };
 
   const submitAnswer = () => {
-    if (selectedAnswer === currentQuestion.correctAnswer) {
-      setScore(score + 1);
-    }
-    setShowEducation(true);
+  const isCorrect = selectedAnswer === currentQuestion.correctAnswer;
+  
+  if (isCorrect) {
+    setScore(score + 1);
+  }
+/* Saving user answers to state userAnswers show on summary page */
+  const result = {
+    questionId: currentQuestion.id,
+    userSelection: selectedAnswer,
+    isCorrect: isCorrect
   };
+   
+  const resultHistory = [...userAnswers, result];
+  setUserAnswers(resultHistory);
+
+  setShowEducation(true);
+};
 
   const nextQuestion = () => {
     if (currentQuestionIndex + 1 < quizQuestions.length) {
@@ -115,7 +126,9 @@ const QuizEngine = ({ category, setCurrentView }) => {
           <p>{currentQuestion.educationText}</p>
           
         </div>
-          <button className="submit-button" onClick={nextQuestion}>Next Question</button>
+          <button className="submit-button" onClick={nextQuestion}>
+          {currentQuestionIndex + 1 === quizQuestions.length ? "Finish" : "Next Question"}
+          </button>
         </div>
       )}
     </div>

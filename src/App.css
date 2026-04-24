@@ -25,3 +25,20 @@
   box-sizing:border-box;
   border: 2px solid white
 }
+
+.score-banner {
+  background-color: #FFD600; /* Yellow from The Open Championship */
+  color: #060645; /* Dark blue from The Open Championship */
+  padding: 2px 0px;
+  padding-top: 25px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0px auto;
+  width: 100%;
+  margin-top: 0px;
+  border: 2px solid white;
+  min-height: 45px;
+  margin-bottom: 15px;
+}
