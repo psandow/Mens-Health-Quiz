@@ -9,8 +9,6 @@ const Hero = ({ currentView, selectedCategory }) => {
     quizzes: "Men's Health Quizzes",
     resources: "Men's Health Resources",
     searchResults: "Search Results",
-    inQuiz: "Men's Health: NAME OF QUIZ HERE",
-    summary: "NAME OF QUIZ HERE Summary"
   };
 
   const quizTitles = {
@@ -22,11 +20,10 @@ const Hero = ({ currentView, selectedCategory }) => {
     general: `Men's Health - General Maintenance Quiz`
   };
 
-  let title = quizTitles[currentView];
+  let title = titles[currentView];
 
   if (currentView === 'inQuiz') {
-    const quizTitle = quizTitles[selectedCategory];
-    title = `${quizTitle}`;
+    title = quizTitles[selectedCategory];
   }
 
   if (currentView === 'summary') {
@@ -37,7 +34,7 @@ const Hero = ({ currentView, selectedCategory }) => {
 
   return (
     <header className="hero-banner">
-      <h1>{title || "Men's Health Quiz"}</h1>
+      <h1>{title || "Men's Health Quiz BROKEN"}</h1>
     </header>
   );
 };

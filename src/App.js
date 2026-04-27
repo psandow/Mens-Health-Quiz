@@ -8,6 +8,7 @@ import CategoryGrid from './components/CategoryGrid';
 import QuizEngine from './components/QuizEngine';
 import { questions } from './components/Questions';
 import './components/QuizEngine.css';
+import Resources from './components/Resources';
 
 /* Top level states are HomeView, QuizzesView, ResourcesView, SearchReultsView, QuizEngine, and SummaryView. The props setCurrentView passed down from the App allows child components to change the top level state */
 
@@ -47,8 +48,7 @@ const QuizzesView = ({ setCurrentView, setSelectedCategory }) =>
 const ResourcesView = () =>
    <div>
     <SearchBar/> 
-    <h2>Resources h2</h2>
-    <p>Resources paragraph</p>
+    <Resources/>
   </div>;
 
 const SearchResultsView = () =>
