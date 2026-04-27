@@ -4,7 +4,7 @@ import './Hero.css';
 
 const SearchBar = ({ placeholder = "Search..." }) => {
   return (
-    <div className="hero-banner">
+    <div className="search-banner">
       <div className="search-container">
         <div className="search-input-wrapper">
           <span className="material-symbols-outlined search-icon">search</span>

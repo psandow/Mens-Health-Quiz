@@ -53,7 +53,7 @@
   box-sizing: border-box;
   border: 2px solid white;
   margin-top: 15px;
-  margin-bottom: 0;
+  margin-bottom: 15px;
   
 }
 
@@ -104,7 +104,6 @@
   font-weight: bold;
   margin: 0px auto;
   width: 100%;
-  margin-top: 15px;
   border: 2px solid white;
   min-height: 45px;
   font-family: inherit;
@@ -135,6 +134,7 @@ button:disabled {
   min-height: 45px;
   font-family: inherit;
   box-sizing: border-box;
+  margin-bottom: 15px;
 }
 
 .education-box p {

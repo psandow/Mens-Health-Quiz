@@ -1,3 +1,19 @@
+.search-banner {
+  background-color: #FFD600; /* Yellow from The Open Championship */
+  color: #060645; /* Dark blue from The Open Championship */
+  padding: 2px 0px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0px auto;
+  width: 100%;
+  margin-top: 0px;
+  border: 2px solid white;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
 .search-container {
   display: flex;
   justify-content: left;
@@ -13,6 +29,7 @@
   max-width: 900px;
   display: flex;
   align-items: center;
+  
 }
 
 .search-input {
@@ -24,6 +41,7 @@
   color: #000000;
   font-size: 1rem;
   outline: none;
+  
 }
 
 .search-input::placeholder {

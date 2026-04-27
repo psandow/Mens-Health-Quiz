@@ -38,7 +38,7 @@ const QuizzesView = ({ setCurrentView, setSelectedCategory }) =>
   <div>
     <p className="welcome-box">
       <p>Welcome to our Men’s Health quizzes. There are five categories to chose from, or you can select the Random Quiz for 10 random questions from all the categories.</p>
-      <p>There are a mixture of multiple choice and True/False questions: select your answer and then select the Submit button to move to the next question. You can restart the quiz at anytime by selecting the Restart button.</p>
+      <p>There are a mixture of multiple choice and True/False questions: select your answer and then select the Submit button to move to the next question.</p>
       <p>You will be told the correct answer after each question and at the end of the quiz, with resources and references to learn more.</p>
     </p>
     <CategoryGrid onCategoryClick={() => setCurrentView('inQuiz')} />
