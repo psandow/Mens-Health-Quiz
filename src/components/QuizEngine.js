@@ -3,6 +3,7 @@ import { questions } from './Questions.js';
 import './QuizEngine.css';
 
 
+
 /* Fisher-Yates Shuffle */
 const shuffleArray = (array) => {
   const shuffled = [...array]; /* The spread operator is used so the the array doesn't get permanantly mixed */
@@ -119,6 +120,7 @@ const QuizEngine = ({ category, setCurrentView, score, setScore, userAnswers, se
       {!showEducation ? (
         <button className="submit-button" onClick={submitAnswer} disabled={selectedAnswer === null}>
           Submit
+          <span className="nav-icon">arrow_forward</span>
         </button>
       ) : (
         <div>
@@ -128,6 +130,7 @@ const QuizEngine = ({ category, setCurrentView, score, setScore, userAnswers, se
         </div>
           <button className="submit-button" onClick={nextQuestion}>
           {currentQuestionIndex + 1 === quizQuestions.length ? "Finish" : "Next Question"}
+          <span className="nav-icon">arrow_forward</span>
           </button>
         </div>
       )}

@@ -137,3 +137,6 @@ button:disabled {
   box-sizing: border-box;
 }
 
+.education-box p {
+  white-space: pre-line;
+}

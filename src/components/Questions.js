@@ -151,175 +151,195 @@ The "Calculus" Factor: Once plaque hardens into tartar (calculus), it acts like 
     educationText: `Because of social conditioning, men are often less likely to report feeling "sad." Instead, depression may show up as low frustration tolerance or "acting out." According to the NHS, men may also experience physical symptoms like headaches or digestive issues that don't respond to treatment.`,
     resourceLink: '/resources/mh',
   },
-  /*{
+  {
     id: 16,
-    category:
-    questionText:
-    type:
-    answers: ['A) ', 'B) ', 'C) ', 'D) '],
-    correctAnswer:
-    educationText:
-    resourceLink:
+    category: 'mh',
+    questionText: 'True or False: A man who is still going to work every day and socialising at the pub cannot be clinically depressed.',
+    type: 'trueFalse', 
+    answers: ['True', 'False'],
+    correctAnswer: 1,
+    educationText: 'Many men suffer from what is sometimes called "High-Functioning Depression." They may maintain their daily routine and "mask" their feelings in social settings while feeling completely empty or exhausted internally. In the UK, three-quarters of all suicides are men, often because they feel they must "man up" and keep their struggles hidden. ',
+    resourceLink: '/resources/mh',
   },
   {
     id: 17,
-    category:
-    questionText:
-    type:
-    answers: ['A) ', 'B) ', 'C) ', 'D) '],
-    correctAnswer:
-    educationText:
-    resourceLink:
+    category: 'mh',
+    questionText: 'Many men use "avoidance" to cope with trauma. Which of the following is a form of avoidance commonly seen in men with PTSD?',
+    type: 'multi',
+    answers: ['A) Staying excessively busy with work or hobbies', 'B) Using alcohol or recreational drugs to "numb" feelings', 'C) Avoiding specific places, people, or conversations related to the event', 'D) All of the above'],
+    correctAnswer: 3,
+    educationText: 'Avoidance is a core symptom of PTSD. Men may throw themselves into work or use substances to distract themselves from intrusive memories. While this provides temporary relief, it often exacerbates the symptoms in the long run by preventing the brain from processing the trauma.',
+    resourceLink: '/resources/mh',
   },
   {
     id: 18,
-    category:
-    questionText:
-    type:
-    answers: ['A) ', 'B) ', 'C) ', 'D) '],
-    correctAnswer:
-    educationText:
-    resourceLink:
+    category: 'mh',
+    questionText: 'How can childhood trauma "mimic" neurodivergent traits like ADHD in adult men?',
+    type: 'multi',
+    answers: ['A) Always scanning for danger (hypervigilance) can look like a lack of focus', 'B) Feeling "on edge" can look like physical hyperactivity or restlessness', 'C) Difficulty regulating big emotions can look like ADHD impulsivity', 'D) All of he above'],
+    correctAnswer: 3,
+    educationText: 'Trauma can "rewire" the brain in ways that mirror neurodivergence. For example, a man who is constantly scanning his environment for threats (hypervigilance) may appear inattentive or distractible, common traits of ADHD. This is why trauma-informed assessments are so important for getting the right support.',
+    resourceLink: '/resources/mh',
   },
   {
     id: 19,
-    category:
-    questionText:
-    type:
-    answers: ['A) ', 'B) ', 'C) ', 'D) '],
-    correctAnswer:
-    educationText:
-    resourceLink:
+    category: 'mh',
+    questionText: 'What is the leading cause of death for men under the age of 50 in the UK?',
+    type: 'multi',
+    answers: ['A) Heart Disease', 'B) Road accidents', 'C) Suicide', 'D) Cancer'],
+    correctAnswer: 2,
+    educationText: `Suicide remains the single leading cause of death for UK men aged 20-49. In 2024, the male suicide rate was roughly three times higher than the female rate, with men accounting for about 75% of all UK suicides.`,
+    resourceLink: '/resources/mh',
   },
   {
     id: 20,
-    category:
-    questionText:
-    type:
-    answers: ['A) ', 'B) ', 'C) ', 'D) '],
-    correctAnswer:
-    educationText:
-    resourceLink:
+    category: 'cancer',
+    questionText: 'In adult men aged 15 to 44 in England, which of the following is the most commonly diagnosed type of cancer?',
+    type: 'multi',
+    answers: ['A) Prostate Cancer', 'B) Lung Cancer', 'C) Testicular Cancer', 'D) Bowel Cancer'],
+    correctAnswer: 2,
+    educationText: `While prostate cancer is the most common for men over 45, testicular cancer is the most frequent diagnosis for men aged 15 to 44. In the UK, around 2,300 men are diagnosed with it annually. It is often called a "young man's disease" because incidence rates are highest in those aged 30 to 34.`,
+    resourceLink: '/resources/cancer',
   },
   {
     id: 21,
-    category:
-    questionText:
-    type:
-    answers: ['A) ', 'B) ', 'C) ', 'D) '],
-    correctAnswer:
-    educationText:
-    resourceLink:
+    category: 'cancer',
+    questionText: 'In the UK, what is the single most common cancer diagnosed in men over the age of 45?',
+    type: 'multi',
+    answers: ['A) Lung Cancer', 'B) Prostate Cancer', 'C) Skin Cancer', 'D) Bowel Cancer'],
+    correctAnswer: 1,
+    educationText: 'Prostate cancer is the most common cancer in men in the UK, with 1 in 8 men being diagnosed in their lifetime. While it is rare in men under 45, the risk rises significantly as you age, with most cases diagnosed in men aged 65 and over.',
+    resourceLink: '/resources/cancer',
   },
   {
     id: 22,
-    category:
-    questionText:
-    type:
-    answers: ['A) ', 'B) ', 'C) ', 'D) '],
-    correctAnswer:
-    educationText:
-    resourceLink:
+    category: 'cancer',
+    questionText: 'Health organisations like the NHS and Testicular Cancer UK suggest a specific frequency for men to check their testicles for lumps or changes. What is the recommended routine?',
+    type: 'multi',
+    answers: ['A) Only when you feel a sharp or sudden pain.', 'B) Once every year during a GP check-up.', 'C) Once a month, ideally during or after a warm bath or shower.', 'D) Every morning as part of a daily grooming routine.'],
+    correctAnswer: 2,
+    educationText: 'The reason experts recommend checking monthly is to help you "know your normal." By spending just a few seconds once a month, you become familiar with the usual size and weight of your testicles. This makes it much easier to notice a new, pea-sized lump or an unusual heaviness. A warm shower is the best time because the heat relaxes the scrotum, making it much easier to feel for changes. If you do find a lump, remember that most are not cancer, but because testicular cancer is highly curable when caught early, you should always get any changes checked by a GP.',
+    resourceLink: '/resources/cancer',
   },
   {
     id: 23,
-    category:
-    questionText:
-    type:
-    answers: ['A) ', 'B) ', 'C) ', 'D) '],
-    correctAnswer:
-    educationText:
-    resourceLink:
+    category: 'cancer',
+    questionText: 'True or False: A PSA (Prostate-Specific Antigen) blood test alone can confirm that a man definitely has prostate cancer.',
+    type: 'trueFalse',
+    answers: ['True', 'False'],
+    correctAnswer: 1,
+    educationText: `The PSA test measures a protein produced by the prostate, but it is not a "yes or no" test for cancer. A high PSA level can be caused by many non-cancerous things, such as an enlarged prostate (BPH), a urinary infection, or even recent vigorous exercise. According to Prostate Cancer UK, the test is a "risk indicator." If your levels are high, your GP will usually suggest further steps, like an MRI scan or a biopsy, to get a definitive answer. In the UK, any man over 50 (or 45 if at higher risk) can request a PSA test after discussing the pros and cons with their doctor.`,
+    resourceLink: '/resources/cancer',
   },
   {
     id: 24,
-    category:
-    questionText:
-    type:
-    answers: ['A) ', 'B) ', 'C) ', 'D) '],
-    correctAnswer:
-    educationText:
-    resourceLink:
+    category: 'cancer',
+    questionText: `In the UK, the NHS sends out a bowel cancer screening kit (called a FIT kit) to eligible men. How often is this screening usually repeated?
+`,
+    type: 'multi',
+    answers: ['A) Once a year', 'B) Once every 2 years', 'C) Once every 5 years', 'D) Only once in your lifetime'],
+    correctAnswer: 1,
+    educationText: `Across the UK, the NHS bowel cancer screening programme aims to detect cancer at an early stage when treatment is most effective. In England, Scotland, and Wales, the FIT kit is automatically sent every two years to people aged 50 to 74. The kit is a simple home test used to find tiny amounts of blood in your poo that aren't visible to the naked eye. Regular screening is vital because it can also find and remove polyps (small growths) before they have a chance to turn into cancer.`, 
+    resourceLink: '/resources/cancer',
   },
   {
     id: 25,
-    category:
-    questionText:
-    type:
-    answers: ['A) ', 'B) ', 'C) ', 'D) '],
-    correctAnswer:
-    educationText:
-    resourceLink:
+    category: 'cancer',
+    questionText: 'True or False: The NHS has a national screening programme that proactively invites certain people for "Lung Health Checks," even if they have no symptoms.',
+    type: 'trueFalse',
+    answers: ['True', 'False'],
+    correctAnswer: 0,
+    educationText: 'The NHS Lung Cancer Screening Programme is a proactive service currently being rolled out across the UK. Unlike other screenings that are open to everyone in an age group, this is a targeted programme. It is designed for people aged 55 to 74 who are current or former smokers, as they are at the highest risk. The goal is to catch lung cancer at the "early stage" before symptoms appear, which significantly increases the chances of successful treatment.',
+    resourceLink: '/resources/cancer',
   },
   {
     id: 26,
-    category:
-    questionText:
-    type:
-    answers: ['A) ', 'B) ', 'C) ', 'D) '],
-    correctAnswer:
-    educationText:
-    resourceLink:
+    category: 'general',
+    questionText: `True or False: The NHS provides a free screening programme specifically for men to check for a swelling in the main blood vessel of the tummy (an Abdominal Aortic Aneurysm). `,
+    type: 'trueFalse',
+    answers: ['True', 'False'],
+    correctAnswer: 0,
+    educationText: `The NHS Abdominal Aortic Aneurysm (AAA) screening programme is a free service offered to all men during the year they turn 65. It involves a quick, painless ultrasound scan of the abdomen to check the width of the aorta, the main blood vessel that runs from the heart down to the tummy. Men are six times more likely to have an aneurysm than women, which is why the programme specifically invites men. Because aneurysms usually have no symptoms, screening is the only way to find them before they potentially burst, which can be life-threatening. If you are a man over 65 and have never been screened, you can self-refer by contacting your local AAA screening service directly.`,
+    resourceLink: '/resources/general',
   },
   {
     id: 27,
-    category:
-    questionText:
-    type:
-    answers: ['A) ', 'B) ', 'C) ', 'D) '],
-    correctAnswer:
-    educationText:
-    resourceLink:
+    category: 'general',
+    questionText: 'Which of the following NHS screening programmes may still be relevant for trans men?',
+    type: 'multi',
+    answers: ['A) Breast screening', 'B) Cervial screening', 'C) Abdominal Aortic Aneurysm (AAA) screening', 'D) All of the above'],
+    correctAnswer: 3,
+    educationText: `Trans men’s screening needs depend on both their anatomy and their GP registration. If a trans man has a cervix or breast tissue, they are still at risk for those cancers and should be screened.`,
+    resourceLink: '/resources/general',
   },
   {
     id: 28,
-    category:
-    questionText:
-    type:
-    answers: ['A) ', 'B) ', 'C) ', 'D) '],
-    correctAnswer:
-    educationText:
-    resourceLink:
+    category: 'cancer',
+    questionText: `In the UK, men are significantly more likely to die from skin cancer (melanoma) than women. Where on the body do these cancers most commonly develop in men?`,
+    type: 'multi',
+    answers: ['A) On the legs and feet', 'B) One the face and neck', 'C) On the back and torso', 'D) On the palms and hands'],
+    correctAnswer: 2,
+    educationText: `Men are more likely to develop melanomas on their chest and back, often due to sun exposure while gardening, working outdoors, or playing sports shirtless. Because the back is difficult to see, these moles often go unnoticed until they are at an advanced stage. According to Cancer Research UK, men have a higher mortality rate from skin cancer partly because they are less likely to perform regular skin checks or ask for help. It is vital to use the "partner check" or a mirror to inspect your back once a month. `,
+    resourceLink: '/resources/cancer',
   },
   {
     id: 29,
-    category:
-    questionText:
-    type:
-    answers: ['A) ', 'B) ', 'C) ', 'D) '],
-    correctAnswer:
-    educationText:
-    resourceLink:
+    category: 'cardiovascular',
+    questionText: 'True or False: Ischaemic heart disease (coronary heart disease) remains the leading cause of death for men in England and Wales.',
+    type: 'trueFalse',
+    answers: ['True', 'False'],
+    correctAnswer: 0,
+    educationText: `According to the latest ONS data for 2024, Ischaemic heart disease is the single biggest killer of men, accounting for 12.5% of all male deaths. In contrast, the leading cause of death for women is Dementia and Alzheimer's disease, which accounts for 15.6% of all female deaths. While dementia is the leading cause for the UK population as a whole, heart disease continues to claim more men's lives annually—over 41,000 deaths in 2024 compared to roughly 28,000 for dementia in the same group.`,
+    resourceLink: '/resources/cardiovascular',
   },
   {
     id: 30,
-    category:
-    questionText:
-    type:
-    answers: ['A) ', 'B) ', 'C) ', 'D) '],
-    correctAnswer:
-    educationText:
-    resourceLink:
+    category: 'cardiovascular',
+    questionText: 'If you suspect you or someone else is having a heart attack—even if the symptoms seem mild—what is the first and most important action you should take?',
+    type: 'multi',
+    answers: ['A) Drive yourself to the nearest hospital', 'B) Call 999 immediately', 'C) Take an aspirin and wait for the pain to pass', 'D) Call your GP surgery for advice'],
+    correctAnswer: 1,
+    educationText: 'A heart attack is a medical emergency. According to the NHS, you should call 999 immediately if you experience symptoms like a sensation of pressure or squeezing in the chest, pain that spreads to the arms, neck, or jaw, or feeling lightheaded and sweaty.',
+    resourceLink: '/resources/cardiovascular',
   },
   {
-    id: 31,
-    category:
-    questionText:
-    type:
-    answers: ['A) ', 'B) ', 'C) ', 'D) '],
-    correctAnswer:
-    educationText:
-    resourceLink:
+    id: 31, 
+    category: 'cardiovascular',
+    questionText: `The NHS uses the word 'FAST' to help people remember the signs of a stroke and what to do. What is the correct action to take the moment you notice any one of these signs?`,
+    type: 'multi',
+    answers: ['A) Book an emergency appointment with your GP', 'B) Call 999 immediately', 'C) Wait for an hour to see if the symptoms go away', 'D) Drive the person to a walk-in centre'],
+    correctAnswer: 1,
+    educationText: `A stroke is a "brain attack" caused by a cut-off in blood supply. Using the FAST test can help you save a life:
+\nFace: Has their face fallen on one side? Can they smile?
+\nArms: Can they raise both arms and keep them there?
+\nSpeech: Is their speech slurred or garbled?
+\nTime: It is time to call 999 immediately if you see any of these signs.`,
+    resourceLink: '/resources/cardiovascular',
   },
   {
-    id: 32,
-    category:
-    questionText:
-    type:
-    answers: ['A) ', 'B) ', 'C) ', 'D) '],
-    correctAnswer:
-    educationText:
-    resourceLink:
+    id: 32, 
+    category: 'cardiovascular',
+    questionText: `High blood pressure (Hypertension) rarely has noticeable symptoms, but it significantly increases the risk of heart attacks and strokes. Which of the following factors can increase your risk of developing high blood pressure?`,
+    type: 'multi',
+    answers: [`A) Lifestyle factors (e.g. high salt diet, smoking, and excessive alcohol)`, `B) Biological factors (e.g. getting older or having close relatives with it)`, `C) Environmental factors (e.g. being overweight or long-term stress)`, `D) All of the above`],
+    correctAnswer: 3,
+    educationText: `High blood pressure is often called the "silent killer" because you can feel perfectly fine while it is damaging your arteries. According to the NHS, your risk increases due to:
+\nAge: Your risk grows as you get older.
+\nGenes: Having close relatives with high blood pressure.
+\nEthnicity: People of Black African or Black Caribbean descent are at higher risk.
+\nDiet & Habits: A diet high in salt, being overweight, smoking, or drinking too much alcohol.
+\nStress: Being stressed over a long period of time.`,
+    resourceLink: '/resources/cardiovascular',
   },
-*/
+  {
+    id: 33, 
+    category: 'cardiovascular',
+    questionText: `Men are statistically more likely to have high cholesterol than women, which can lead to clogged arteries. What is the most common type of medication prescribed by the NHS to help lower cholesterol levels?`,
+    type: 'multi',
+    answers: ['A) Antibiotics', 'B) Statins', 'C) Antivirals', `D) Beta-blocers`],
+    correctAnswer: 1,
+    educationText: 'High cholesterol is a major risk factor for heart disease and stroke. According to the NHS, Statins are the most common medicine used to lower cholesterol. They work by reducing the amount of cholesterol made by your liver.',
+    resourceLink: '/resources/cardiovascular',
+  },
+
   ]
