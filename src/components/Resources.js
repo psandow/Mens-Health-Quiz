@@ -28,17 +28,15 @@ const Resources = () => {
         { title: "NHS - Bowel cancer screening", url: "https://www.nhs.uk/tests-and-treatments/bowel-cancer-screening/"},
         { title: "NHS - Who breast screening is for", url: "https://www.nhs.uk/tests-and-treatments/breast-screening-mammogram/who-breast-screening-is-for/"},
         { title: "NHS - When you'll be invited for cervical screening", url: "https://www.nhs.uk/tests-and-treatments/cervical-screening/when-youll-be-invited/"},
-        { title: "", url: ""},
       ]
     },
     {
       name: "Cardiovascular Health",
       links: [
-        { title: "NHS - Heart attach", url: "https://www.nhs.uk/conditions/heart-attack/" },
+        { title: "NHS - Heart attack", url: "https://www.nhs.uk/conditions/heart-attack/" },
         { title: "NHS - Symptoms of a stroke", url: "https://www.nhs.uk/conditions/stroke/symptoms/" },
-        { title: "", url: ""},
-        { title: "", url: ""},
-        { title: "", url: ""},
+        { title: "NHS High blood pressure", url: "https://www.nhs.uk/conditions/high-blood-pressure/"},
+        { title: "NHS High cholesterol", url: "https://www.nhs.uk/conditions/high-cholesterol/"},
       ]
     },
     {
@@ -46,9 +44,10 @@ const Resources = () => {
       links: [
         { title: "NHS - Quit Smoking", url: "https://www.nhs.uk/better-health/quit-smoking/" },
         { title: "NHS - Chlamydia", url: "https://www.nhs.uk/conditions/chlamydia/" },
-        { title: "", url: ""},
-        { title: "", url: ""},
-        { title: "", url: ""},
+        { title: "NHS - Alcohol advice", url: "https://www.nhs.uk/live-well/alcohol-advice/"},
+        { title: "NHS - Anabolic steroid misuse", url: "https://www.nhs.uk/conditions/anabolic-steroid-misuse/"},
+        { title: "NHS - Exercise", url: "https://www.nhs.uk/live-well/exercise/"},
+        { title: "NHS - Erectile dysfunction", url: "https://www.nhs.uk/conditions/erection-problems-erectile-dysfunction/"},
       ]
     },
     {
@@ -57,8 +56,8 @@ const Resources = () => {
         { title: "NHS - Earwax build-up", url: "https://www.nhs.uk/conditions/earwax-build-up/" },
         { title: "NHS Health Check", url: "https://www.nhs.uk/tests-and-treatments/nhs-health-check/" },
         { title: "NHS - How to check your testicles", url: "https://www.nhs.uk/tests-and-treatments/how-to-check-your-testicles/"},
-        { title: "", url: ""},
-        { title: "", url: ""},
+        { title: "NHS - Take care of your teeth and gums", url: "https://www.nhs.uk/live-well/healthy-teeth-and-gums/take-care-of-your-teeth-and-gums/"},
+        { title: "NHS Cambridge Univeristy Hosptial - How to check your skin for cancer", url: "https://www.cuh.nhs.uk/our-services/dermatology/skin-cancer-service/how-to-check-your-skin-for-cancer/" },
       ]
     }
   ];

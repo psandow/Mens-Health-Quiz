@@ -23,6 +23,8 @@ const QuizEngine = ({ category, setCurrentView, score, setScore, userAnswers, se
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState(null); /* can set submit button to be disabled if selected answer is null. Next question function will need to clear selected answer back to null by calling setSelectedAnswer(null). Submit function will compared selectedAnswer to the correctAnswer from questions.js file */
   const [showEducation, setShowEducation] = useState(false); /* call setShowEducation(true) when submit button is clicked*/
+  const [answerResult, setAnswerResult] = useState(null); /* state to store the result text (Correct or Incorrect) to add accessibility (red/green on yellow background not suitable by itself) */
+
 
 
  /* const pool = category === 'random'
@@ -57,7 +59,11 @@ const QuizEngine = ({ category, setCurrentView, score, setScore, userAnswers, se
   
   if (isCorrect) {
     setScore(score + 1);
+    setAnswerResult("Correct!");
+  } else {
+    setAnswerResult("Incorrect.");
   }
+
 /* Saving user answers to state userAnswers show on summary page */
   const result = {
     questionId: currentQuestion.id,
@@ -76,6 +82,7 @@ const QuizEngine = ({ category, setCurrentView, score, setScore, userAnswers, se
       setCurrentQuestionIndex(currentQuestionIndex + 1);
       setShowEducation(false);
       setSelectedAnswer(null);
+      setAnswerResult(null);
     } else {
       setCurrentView('summary');
     }
@@ -112,8 +119,11 @@ const QuizEngine = ({ category, setCurrentView, score, setScore, userAnswers, se
       </button>
     );
   })}
+  
 </div>
-
+    {showEducation && (
+    <p>{answerResult}</p>
+  )}
     </div>
 
     <div>
