@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# Men's Health Quiz
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+My first Single Page Application (SPA) designed to educate and empower men regarding their health. Drawing on my healthcare experience in England, this quiz provides accessible health information, with links to UK resources.
 
-## Available Scripts
+## Purpose
 
-In the project directory, you can run:
+Men's health outcomes are often impacted by a lack of early intervention and awareness. This project was built to provide an impactful, easy-to-use platform that covers critical health areas, making vital information more approachable.
 
-### `npm start`
+## Features
+- **Five Categories:**
+  - **Mental Health:** Identifying signs and breaking stigmas.
+  - **Cancer Awareness:** Focus on early detection and gender-specific risks.
+  - **Cardiovascular Health:** Understanding the "silent killers" like hypertension and cocaine-induced stress.
+  - **Lifestyle & Sexual Health:** Real-world data on nutrition, substance use, and asymptomatic STIs.
+  - **General Maintenance:** The importance of routine "MOTs," including dental and systemic health links.
+- **Dynamic 10-Question Randomizer:** Combines questions from all pools to test general health literacy.
+- **Evidence-Based Education:** Every question provides immediate "Education Text" feedback, drawing on NHS and UK based data.
+- **Resource Integration:** Direct paths to further reading for every category.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Accessibility/Design
+Taking inspiration from the black on yellow scoreboard, and the dark blue branding of the The Open Championship, men's British golf open, I first created wireframe and high fidelity prototype in Figma:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<p align="center">
+  <img src="./docs/Figma-wireframe-Men's-Health-Quiz.jpg" width="45%" alt="Initial wireframe design of home page in Figma" />
+  <img src="./docs/Figma-prototype-Men's-Health-Quiz.jpg" width="45%" alt="Screenshot of high fidelity prototype on smartphone screen in Figma" />
+</p>
 
-### `npm test`
+- **High Contrast:** Colour palettes chosen specifically for readability and visual clarity.
+- **Keyboard Navigation:** Full tabbing support for users who don't use a mouse.
+- **Responsive Design:** Optimised for small smartphone screens to desktop monitors.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies
+- **React** This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- **JavaScript**
+- **CSS3**
+- **HTML5**
 
-### `npm run build`
+## How to Use
+I have deployed the app to GitHub pages here:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Note the search bar is not coded yet, so cannot be used. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to clone
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
