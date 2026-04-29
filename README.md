@@ -36,7 +36,7 @@ Taking inspiration from the black on yellow scoreboard, and the dark blue brandi
 - **HTML5**
 
 ## How to Use
-I have deployed the app to GitHub pages here:
+I have deployed the app to GitHub pages here: https://psandow.github.io/Mens-Health-Quiz/
 
 Note the search bar is not coded yet, so cannot be used. 
 
