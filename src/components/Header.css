@@ -31,7 +31,7 @@
     font-family: 'Libre Baskerville', serif;
 }
 
-@media (max-width: 600px) {          /* Mobile styles. need to refine */
+@media (max-width: 400px) {          /* Mobile styles. iPhone SE is 375px wide - accomadate this. */
   .header-nav {
     justify-content: space-between;
   }
@@ -39,6 +39,29 @@
     flex: 1;
     min-width: 0;
     font-size: 14px;
+    padding: 4px;
+  }
+  .nav-item-active {
+    padding-left: 5px;
+    padding-right: 5px;
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 600px) {          /* Mobile styles. Pixel 7 is 412px wide - accomadate this. */
+  .header-nav {
+    justify-content: space-between;
+  }
+  .nav-item {
+    flex: 1;
+    min-width: 0;
+    font-size: 14px;
+    padding: 4px;
+  }
+  .nav-item-active {
+    padding-left: 5px;
+    padding-right: 5px;
+    min-width: 100px;
   }
 }
 

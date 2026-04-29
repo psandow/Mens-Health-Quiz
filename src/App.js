@@ -15,7 +15,7 @@ import Resources from './components/Resources';
 const HomeView = ({ setCurrentView, setSelectedCategory }) => 
   <div>
     <SearchBar/> 
-    <p className="welcome-box">
+    <div className="welcome-box">
       <p>Welcome to our Men’s Health resources and quizzes. These materials could be helpful for anyone with or interested in male-specific health concerns, including cis men, trans men, and non-binary people. </p>
       <p>Test your knowledge with the quick quizzes below or check out our {" "}
         <a
@@ -28,7 +28,7 @@ const HomeView = ({ setCurrentView, setSelectedCategory }) =>
           how-to guide
           </a>
           .</p>
-    </p>
+    </div>
     <CategoryGrid onCategoryClick={(id) => {
       setSelectedCategory(id); 
       setCurrentView('inQuiz');
@@ -37,11 +37,11 @@ const HomeView = ({ setCurrentView, setSelectedCategory }) =>
 
 const QuizzesView = ({ setCurrentView, setSelectedCategory }) =>
   <div>
-    <p className="welcome-box">
+    <div className="welcome-box">
       <p>Welcome to our Men’s Health quizzes. There are five categories to chose from, or you can select the Random Quiz for 10 random questions from all the categories.</p>
       <p>There are a mixture of multiple choice and True/False questions: select your answer and then select the Submit button to move to the next question.</p>
       <p>You will be told the correct answer after each question and at the end of the quiz, with resources and references to learn more.</p>
-    </p>
+    </div>
     <CategoryGrid onCategoryClick={() => setCurrentView('inQuiz')} />
   </div>;
 
