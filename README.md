@@ -41,6 +41,12 @@ I have deployed the app to GitHub pages here: https://psandow.github.io/Mens-Hea
 Note the search bar is not coded yet, so cannot be used. 
 
 ## How to clone
+Assuming you have Git installed, open a terminal eg Git Bash:
+1. git clone https://github.com/psandow/Mens-Health-Quiz.git
+1. cd Mens-Health-Quiz
+1. npm install
+1. npm start
+1. Then go to http://localhost:3000 in your web browser eg Chrome
 
 
 
